@@ -1,5 +1,5 @@
-# 딥러닝을 활용한 음성합성(2) 2020.08.13 / 김형주 / SNU ECE | Human Interface lab
-
+# 딥러닝을 활용한 음성합성(2)
+##  2020.08.13 | 김형주 | SNU ECE | Human Interface lab
 ## Vocoder
 ### 1. 음성 신호의 기초
 : 차세대 인터페이스로서의 음성 신호
@@ -34,5 +34,8 @@
 - Neural Vocoder : Mel 스펙토그램을 입력으로 받아 음성 신호를 생성하는 딥러닝 모델로 학습 시에서 1~2초로 짧게 짤라 사용하므로 메모리 사용의 부담을 줄일 수 있다
 
 ## Deep Generative Model
-- Autogrssive model
--
+**<생성 모델의 종류>**
+1. Autogressive model
+2. Generative Adversarial Network( GAN )
+3. Variational Autoencoder( VAE )
+4. Normalizing Flow
