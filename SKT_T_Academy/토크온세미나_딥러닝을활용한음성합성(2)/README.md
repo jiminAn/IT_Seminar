@@ -35,7 +35,28 @@
 
 ## Deep Generative Model
 **<생성 모델의 종류>**
-1. Autogressive model
+1. Autogressive model 
+- 목적함수: Chainig rule을 통한 확률 계산
+- RNN-based approach(안정적이고 의미있는 모델링 가능)
+- Masking based approach
+- Pixel CNN : 이미지를 생성하기 위한 모델로 Blind spot이 나오는 것을 피하기 위해 masking을 모든 샘플링을 표현할 수 있게 정교하게 할 필요가 있음
+- CNN으로 sequential data를 모델링하는 방법: 데이터가 1차원이므로 casual CNN을 사용하면 됨, 단 음성 신호일 경우 dimension이 크므로, casual CNN을 사용할 경우 엄청나게 많은 수의 layer가 필요하다는 문제점이 있음
+- Wave net : Dilated and Casual CNN은 매 층마다 입력 신호의 간격을 지수적으로 증가시켜 적당한 수의 층만으로도 상당히 넓은 receptive field를 갖도록 모델을 설계 
+
+
 2. Generative Adversarial Network( GAN )
 3. Variational Autoencoder( VAE )
 4. Normalizing Flow
+-> 결론: log liklihood를 maximize하면 모델의 성능이 높아지게 된다.
+
+
+
+
+
+
+
+
+
+
+
+
